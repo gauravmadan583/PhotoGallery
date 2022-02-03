@@ -1,7 +1,7 @@
 const Title = () => {
     return (
-        <div>
-            Photogram
+        <div className="title">
+            <h1>FireGram</h1>
         </div>
     );
 }

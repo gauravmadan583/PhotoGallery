@@ -1,23 +1,20 @@
 import firebase from "firebase/compat/app";
 import 'firebase/compat/storage';
 import 'firebase/compat/firestore';
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
 
-// Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyDYP656o5m7XLZqsWkQ1xR0frmWemmMVJM",
-  authDomain: "firegram-d1e58.firebaseapp.com",
-  projectId: "firegram-d1e58",
-  storageBucket: "firegram-d1e58.appspot.com",
-  messagingSenderId: "17055847102",
-  appId: "1:17055847102:web:7cfbd82f4bc740758dc4ef"
+  apiKey: "AIzaSyAfa2dZzmUU6jtBVg4X5Au-2pZn0r1uR28",
+  authDomain: "firegram-6b78e.firebaseapp.com",
+  projectId: "firegram-6b78e",
+  storageBucket: "firegram-6b78e.appspot.com",
+  messagingSenderId: "42386814648",
+  appId: "1:42386814648:web:ae423aea824eaddd62e64d"
 };
 
-// Initialize Fire
 firebase.initializeApp(firebaseConfig);
 
 const projectStorage = firebase.storage();
 const projectFirestore = firebase.firestore();
+const timestamp = firebase.firestore.FieldValue.serverTimestamp;
 
-export { projectStorage, projectFirestore };
+export { projectStorage, projectFirestore, timestamp };
